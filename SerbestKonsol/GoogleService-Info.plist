@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>91697925129-q95fv2eu712il7nmpehe2k5ck65biorv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.91697925129-q95fv2eu712il7nmpehe2k5ck65biorv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAlgibYV0o-j6fO6gxvrvzCEGrPgDB_qKY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>91697925129</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>serbestElektrik.SerbestKonsol</string>
+	<key>PROJECT_ID</key>
+	<string>se-ios</string>
+	<key>STORAGE_BUCKET</key>
+	<string>se-ios.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:91697925129:ios:fd103e56fff606b8</string>
+	<key>DATABASE_URL</key>
+	<string>https://se-ios.firebaseio.com</string>
+</dict>
+</plist>

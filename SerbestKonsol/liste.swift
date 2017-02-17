@@ -7,24 +7,27 @@
 //
 
 import UIKit
-
+import Firebase
 class liste: UITableViewController {
+    
     var telNos = [String]()
     var uids = [String]()
     var selectedUid = String()
+    var ref = FIRDatabaseReference.init()
     override func viewDidLoad() {
         super.viewDidLoad()
-        telNos.append("513123124")
-        uids.append("şlksdfş")
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
+        ref = FIRDatabase.database().reference()
+        
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.reloadData()
+        loadUid()
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -64,6 +67,38 @@ class liste: UITableViewController {
             }
         }
     }
+    func loadUid(){
+        self.uids = []
+        self.telNos = []
+        ref.child("application").observe(.value, with: {
+            snapshot in
+            if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                for snap in snapshots {
+                    var key1 = snap.key
+                    self.ref.child("application").child(snap.key).child("userApp").observe(.value, with: {
+                        snapshot in
+                        if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot]{
+                            for snap in snapshots{
+                                var key2 = snap.key
+                                self.ref.child("application").child(key1).child("userApp").child(key2).child("image").observe(.value, with: {
+                                    snapshot in
+                                    if snapshot.value as? String == "used" {
+                                        self.ref.child("application").child(key1).child("userApp").child(key2).child("Phone").observe(.value, with: {
+                                            snapshot in
+                                            self.uids.append(key1)
+                                            self.telNos.append(snapshot.value as! String)
+                                            self.tableView.reloadData()
+                                        })
+                                    }
+                                })
+                            }
+                        }
+                    })
+                }
+            }
+        })
+    }
+
     /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
