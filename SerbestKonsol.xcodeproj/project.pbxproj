@@ -47,6 +47,7 @@
 		BB9B459C1E56EA1A007D1EB3 /* SerbestKonsolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SerbestKonsolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9B45A01E56EA1A007D1EB3 /* SerbestKonsolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerbestKonsolUITests.swift; sourceTree = "<group>"; };
 		BB9B45A21E56EA1A007D1EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB9B45AE1E56ECD2007D1EB3 /* SerbestKonsol.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SerbestKonsol.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		BB9B457F1E56EA19007D1EB3 /* SerbestKonsol */ = {
 			isa = PBXGroup;
 			children = (
+				BB9B45AE1E56ECD2007D1EB3 /* SerbestKonsol.entitlements */,
 				BB9B45801E56EA19007D1EB3 /* AppDelegate.swift */,
 				BB9B45821E56EA1A007D1EB3 /* ViewController.swift */,
 				BB9B45841E56EA1A007D1EB3 /* Main.storyboard */,
@@ -195,6 +197,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = K5V3QB6R85;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					BB9B45901E56EA1A007D1EB3 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -415,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SerbestKonsol/SerbestKonsol.entitlements;
 				DEVELOPMENT_TEAM = K5V3QB6R85;
 				INFOPLIST_FILE = SerbestKonsol/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -428,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SerbestKonsol/SerbestKonsol.entitlements;
 				DEVELOPMENT_TEAM = K5V3QB6R85;
 				INFOPLIST_FILE = SerbestKonsol/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
