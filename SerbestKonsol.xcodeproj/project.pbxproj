@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BB9B45811E56EA1A007D1EB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B45801E56EA19007D1EB3 /* AppDelegate.swift */; };
-		BB9B45831E56EA1A007D1EB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B45821E56EA1A007D1EB3 /* ViewController.swift */; };
 		BB9B45861E56EA1A007D1EB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9B45841E56EA1A007D1EB3 /* Main.storyboard */; };
 		BB9B45881E56EA1A007D1EB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9B45871E56EA1A007D1EB3 /* Assets.xcassets */; };
 		BB9B458B1E56EA1A007D1EB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9B45891E56EA1A007D1EB3 /* LaunchScreen.storyboard */; };
 		BB9B45961E56EA1A007D1EB3 /* SerbestKonsolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B45951E56EA1A007D1EB3 /* SerbestKonsolTests.swift */; };
 		BB9B45A11E56EA1A007D1EB3 /* SerbestKonsolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B45A01E56EA1A007D1EB3 /* SerbestKonsolUITests.swift */; };
+		BB9B45B01E56EE40007D1EB3 /* liste.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B45AF1E56EE40007D1EB3 /* liste.swift */; };
+		BB9B45B21E56EE53007D1EB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B45B11E56EE53007D1EB3 /* ViewController.swift */; };
+		BB9B45B41E56EF54007D1EB3 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B45B31E56EF54007D1EB3 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		BB9B457D1E56EA19007D1EB3 /* SerbestKonsol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SerbestKonsol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9B45801E56EA19007D1EB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB9B45821E56EA1A007D1EB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB9B45851E56EA1A007D1EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB9B45871E56EA1A007D1EB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB9B458A1E56EA1A007D1EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +49,9 @@
 		BB9B45A01E56EA1A007D1EB3 /* SerbestKonsolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerbestKonsolUITests.swift; sourceTree = "<group>"; };
 		BB9B45A21E56EA1A007D1EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB9B45AE1E56ECD2007D1EB3 /* SerbestKonsol.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SerbestKonsol.entitlements; sourceTree = "<group>"; };
+		BB9B45AF1E56EE40007D1EB3 /* liste.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = liste.swift; sourceTree = "<group>"; };
+		BB9B45B11E56EE53007D1EB3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB9B45B31E56EF54007D1EB3 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +104,13 @@
 			children = (
 				BB9B45AE1E56ECD2007D1EB3 /* SerbestKonsol.entitlements */,
 				BB9B45801E56EA19007D1EB3 /* AppDelegate.swift */,
-				BB9B45821E56EA1A007D1EB3 /* ViewController.swift */,
 				BB9B45841E56EA1A007D1EB3 /* Main.storyboard */,
 				BB9B45871E56EA1A007D1EB3 /* Assets.xcassets */,
 				BB9B45891E56EA1A007D1EB3 /* LaunchScreen.storyboard */,
 				BB9B458C1E56EA1A007D1EB3 /* Info.plist */,
+				BB9B45AF1E56EE40007D1EB3 /* liste.swift */,
+				BB9B45B11E56EE53007D1EB3 /* ViewController.swift */,
+				BB9B45B31E56EF54007D1EB3 /* Cell.swift */,
 			);
 			path = SerbestKonsol;
 			sourceTree = "<group>";
@@ -269,8 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB9B45831E56EA1A007D1EB3 /* ViewController.swift in Sources */,
+				BB9B45B21E56EE53007D1EB3 /* ViewController.swift in Sources */,
+				BB9B45B41E56EF54007D1EB3 /* Cell.swift in Sources */,
 				BB9B45811E56EA1A007D1EB3 /* AppDelegate.swift in Sources */,
+				BB9B45B01E56EE40007D1EB3 /* liste.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
