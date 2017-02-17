@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9ADF9B680905A1C229951B5159721C12"
+               BlueprintIdentifier = "5548DA3C0E01543F448A5AA67CF2953D"
                BuildableName = "Pods_SerbestKonsol.framework"
                BlueprintName = "Pods-SerbestKonsol"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9ADF9B680905A1C229951B5159721C12"
+            BlueprintIdentifier = "5548DA3C0E01543F448A5AA67CF2953D"
             BuildableName = "Pods_SerbestKonsol.framework"
             BlueprintName = "Pods-SerbestKonsol"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -11,6 +11,8 @@ target 'SerbestKonsol' do
 	pod ‘Firebase/Database’
 	pod ‘Firebase/Storage’
 	pod ‘Firebase/Core’
+	pod ‘FirebaseUI/Storage’
+	pod 'SDWebImage'
   target 'SerbestKonsolTests' do
     inherit! :search_paths
     # Pods for testing
